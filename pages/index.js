@@ -2,9 +2,9 @@ import {
   Heading,
   Container,
   Box,
-  Text,
   useColorModeValue
 } from "@chakra-ui/react"
+import GridBox from "../components/work_grid"
 
 export default function Home() {
   return (
@@ -13,9 +13,11 @@ export default function Home() {
       <Box borderRadius="lg" bg={useColorModeValue("gray.100", "gray.600")} p={3} align="center">
         Hello there, I am a Full-stack developer from Vancouver, BC
       </Box>
-      <Heading as="h3" p={3} fontFamily="heading" >Ryan Kwok</Heading>
+      <Heading as="h3" p={3} fontFamily="heading" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip="text">Ryan Kwok</Heading>
       <Box>
+        <GridBox>
 
+        </GridBox>
       </Box>
     </Container >
   )

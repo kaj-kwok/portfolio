@@ -1,4 +1,4 @@
-import { Flex, Button, Icon, Link } from '@chakra-ui/react'
+import { Flex, Button, IconButton, Link } from '@chakra-ui/react'
 import { BsLinkedin, BsGithub } from "react-icons/bs"
 import { MdEmail } from 'react-icons/md'
 
@@ -18,13 +18,13 @@ const SideBar = () => {
       <Button p="5">Tech Stack</Button>
 
       <Link href="mailto: kaj.kwok@gmail.com">
-        <Icon as={MdEmail} w="6" h="6" />
+        <IconButton icon={<MdEmail />} isRound="true" p="3" />
       </Link>
       <Link href="https://www.linkedin.com/in/ryan-kwok604">
-        <Icon as={BsLinkedin} w="6" h="6" />
+        <IconButton icon={<BsLinkedin />} isRound="true" p="3" />
       </Link>
       <Link href="https://github.com/kaj-kwok">
-        <Icon as={BsGithub} w="6" h="6" />
+        <IconButton icon={<BsGithub />} isRound="true" p="3" />
       </Link>
     </Flex>
   )

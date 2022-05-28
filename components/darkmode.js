@@ -1,4 +1,4 @@
-import { useColorMode, Box, IconButton } from "@chakra-ui/react"
+import { useColorMode, IconButton } from "@chakra-ui/react"
 import { SunIcon, MoonIcon } from '@chakra-ui/icons'
 
 const ThemeSelector = () => {
@@ -13,3 +13,4 @@ const ThemeSelector = () => {
 }
 
 export default ThemeSelector
+
