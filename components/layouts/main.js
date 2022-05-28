@@ -11,10 +11,10 @@ const Main = ({ children, router }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Ryan Kwok's Homepage</title>
       </Head>
-      <Box pos="absolute" right="0" top="0" p={2}>
+      <Box pos="absolute" right="0" top="0" p={2} >
         <ThemeSelector />
         <Menu>
-          <MenuButton as={IconButton} aria-label="Open Menu" icon={<HamburgerIcon />} display={{ base: 'inline-block', md: 'none' }} />
+          <MenuButton as={IconButton} aria-label="Open Menu" icon={<HamburgerIcon />} display={{ base: 'inline-block', md: 'none' }} mx={2} />
           <MenuList>
             <MenuItem>
               Resume
