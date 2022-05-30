@@ -13,7 +13,7 @@ const GridBox = () => {
       <Heading as="h2" mb="6">
         Projects
       </Heading>
-      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={3} gridAutoRows="1fr">
+      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={7} gridAutoRows="1fr">
         <Section>
           <WorkGridItem id="Name_that_toon" title="Name that Toon" thumbnail={thumbNameThat} >
             A fun music recognition game!<br />

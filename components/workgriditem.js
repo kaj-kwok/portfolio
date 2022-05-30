@@ -12,6 +12,7 @@ const WorkGridItem = ({ thumbnail, title, children }) => {
       borderColor="#92a8d1"
       borderWidth="5px"
       boxShadow="dark-lg"
+      _hover={{ transform: "scale(1.1)", transition: "all 0.5s ease" }}
     >
       <Image
         src={thumbnail}
