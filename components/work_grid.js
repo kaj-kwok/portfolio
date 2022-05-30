@@ -10,7 +10,7 @@ import thumbTweeter from "../public/thumbTweeter.png"
 const GridBox = () => {
   return (
     <Container maxW="100%">
-      <Heading as="h2" mb="6">
+      <Heading as="h2" m="6">
         Projects
       </Heading>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={7} gridAutoRows="1fr">
