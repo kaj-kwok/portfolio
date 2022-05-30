@@ -5,6 +5,7 @@ const WorkGridItem = ({ thumbnail, title, children }) => {
   return (
     <Box
       w='100%'
+      h="100%"
       textAlign="center"
       borderStyle="solid"
       borderRadius="12px"

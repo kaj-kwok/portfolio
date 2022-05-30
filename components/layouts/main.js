@@ -4,6 +4,8 @@ import SideBar from './sidebar'
 import ThemeSelector from '../darkmode'
 import { HamburgerIcon } from '@chakra-ui/icons'
 
+
+
 const Main = ({ children, router }) => {
   return (
     <Box as="main" pb={8} display="flex" >
@@ -13,24 +15,26 @@ const Main = ({ children, router }) => {
       </Head>
       <Box pos="absolute" right="0" top="0" p={2} >
         <ThemeSelector />
-        <Menu>
-          <MenuButton as={IconButton} aria-label="Open Menu" icon={<HamburgerIcon />} display={{ base: 'inline-block', md: 'none' }} mx={2} />
-          <MenuList>
-            <MenuItem>
-              Resume
-            </MenuItem>
-            <MenuItem>
-              Projects
-            </MenuItem>
-            <MenuItem>
-              Tech Stack
-            </MenuItem>
-          </MenuList>
-        </Menu>
+        <Box display={{ base: 'inline-block', md: 'none' }}>
+          <Menu>
+            <MenuButton as={IconButton} aria-label="Open Menu" icon={<HamburgerIcon />} mx={2} />
+            <MenuList>
+              <MenuItem>
+                Resume
+              </MenuItem>
+              <MenuItem>
+                Projects
+              </MenuItem>
+              <MenuItem>
+                Tech Stack
+              </MenuItem>
+            </MenuList>
+          </Menu>
+        </Box>
       </Box>
       <SideBar />
 
-      <Container maxW="container.md" pt={14}>
+      <Container maxW="container.lg" pt={14}>
         {children}
       </Container>
     </Box>

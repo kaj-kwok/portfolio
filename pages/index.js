@@ -9,7 +9,7 @@ import GridBox from "../components/work_grid"
 export default function Home() {
   return (
 
-    <Container display="flex" flexDirection="column">
+    <Container display="flex" flexDirection="column" maxWidth="container.lg">
       <Box borderRadius="lg" bg={useColorModeValue("gray.100", "gray.600")} p={3} align="center">
         Hello there, I am a Full-stack developer from Vancouver, BC
       </Box>

@@ -3,14 +3,17 @@ import WorkGridItem from "./workgriditem";
 import thumbNameThat from "../public/thumbNamethatToon.png"
 import Section from "../components/section"
 import thumbScheduler from "../public/thumbSch.png"
+import thumbStory from "../public/thumbStory.png"
+import thumbJungle from "../public/thumbJungle.png"
+import thumbTweeter from "../public/thumbTweeter.png"
 
 const GridBox = () => {
   return (
-    <Container>
+    <Container maxW="100%">
       <Heading as="h2" mb="6">
         Projects
       </Heading>
-      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={3}>
+      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={3} gridAutoRows="1fr">
         <Section>
           <WorkGridItem id="Name_that_toon" title="Name that Toon" thumbnail={thumbNameThat} >
             A fun music recognition game!<br />
@@ -21,6 +24,23 @@ const GridBox = () => {
           <WorkGridItem id="scheduler" title="Scheduler" thumbnail={thumbScheduler}>
             Student/Teacher Appointment Scheduler<br />
             Manage/Book Appointments throughout the week
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem id="story" title="Story Creator" thumbnail={thumbStory}>
+            Choose your own Story!<br />
+            Create a new story, users can submit suggestions on the direction of the story and can vote on their preferred.
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem id="Jungle" title="Jungle E-Commerce" thumbnail={thumbJungle}>
+            E-Commerce Platform for Plants.
+            Buy and sell your favourite plants built on Ruby. Submit reviews on products, sample payment system using Stripe.
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem id="tweeter" title="Tweeter" thumbnail={thumbTweeter}>
+            Simple Twitter clone using Javascript and JQuery.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
