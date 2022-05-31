@@ -9,7 +9,7 @@ import thumbTweeter from "../public/thumbTweeter.png"
 
 const GridBox = () => {
   return (
-    <Container maxW="100%">
+    <Container maxW="100%" id="Projects">
       <Heading as="h2" m="6">
         Projects
       </Heading>

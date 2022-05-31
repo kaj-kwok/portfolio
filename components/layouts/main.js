@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Box, Container, MenuButton, Menu, IconButton, MenuItem, MenuList } from '@chakra-ui/react'
+import { Box, Container, MenuButton, Menu, IconButton, MenuItem, MenuList, Flex } from '@chakra-ui/react'
 import SideBar from './sidebar'
 import ThemeSelector from '../darkmode'
 import { HamburgerIcon } from '@chakra-ui/icons'
@@ -32,8 +32,7 @@ const Main = ({ children, router }) => {
           </Menu>
         </Box>
       </Box>
-      <SideBar />
-
+      <SideBar path={router.asPath} />
       <Container maxW="container.lg" pt={14}>
         {children}
       </Container>
