@@ -1,4 +1,5 @@
-import { Container, Heading, SimpleGrid } from "@chakra-ui/react";
+import { Box, Heading, SimpleGrid } from "@chakra-ui/react";
+import Section from "./section";
 import TechStackIcon from "./techstackicon"
 import Javascript from "../public/icons/js-icon-24.jpg"
 import React from "../public/icons/react_1353128.png"
@@ -21,19 +22,21 @@ const stack = [
 
 const TechStack = () => {
   return (
-    <Container maxW="100%">
-      <Heading as="h3" textAlign="left" maxW="100%" m="6">Tech Stack</Heading>
-      <SimpleGrid columns={{ base: 2, md: 3 }} my={9} ml={5} spacingY="20px">
-        <TechStackIcon title="Javascript" image={Javascript} />
-        <TechStackIcon title="React" image={React} />
-        <TechStackIcon title="HTML/CSS" image={Html} />
-        <TechStackIcon title="Express" image={Express} />
-        <TechStackIcon title="PostgresQL" image={Postgres} />
-        <TechStackIcon title="JQuery" image={JQuery} />
-        <TechStackIcon title="git" image={Git} />
-        <TechStackIcon title="Ruby on Rails" image={Ruby} />
-      </SimpleGrid>
-    </Container>
+    <Section>
+      <Box id="TechStack">
+        <Heading as="h3" textAlign="left" maxW="100%" m="6">Tech Stack</Heading>
+        <SimpleGrid columns={{ base: 2, md: 3 }} my={9} ml={5} spacingY="20px">
+          <TechStackIcon title="Javascript" image={Javascript} />
+          <TechStackIcon title="React" image={React} />
+          <TechStackIcon title="HTML/CSS" image={Html} />
+          <TechStackIcon title="Express" image={Express} />
+          <TechStackIcon title="PostgresQL" image={Postgres} />
+          <TechStackIcon title="JQuery" image={JQuery} />
+          <TechStackIcon title="git" image={Git} />
+          <TechStackIcon title="Ruby on Rails" image={Ruby} />
+        </SimpleGrid>
+      </Box>
+    </Section>
   )
 }
 

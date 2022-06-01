@@ -31,14 +31,17 @@ const SideBar = ({ path }) => {
 
     >
       <Flex direction="column" position="fixed" gap='10px'>
-        <LinkItem href="#Projects" path={path} scroll={false}>
-          <Button p="5">Resume</Button>
+        <LinkItem href="/#AboutMe" path={path} scroll={false}>
+          <Button p="5">About Me</Button>
         </LinkItem>
-        <LinkItem href="/Tech Stack" path={path}>
+        <LinkItem href="/#Projects" path={path} scroll={false}>
           <Button p="5">Projects</Button>
         </LinkItem>
-        <LinkItem href="/#" path={path}>
+        <LinkItem href="/#TechStack" path={path}>
           <Button p="5">Tech Stack</Button>
+        </LinkItem>
+        <LinkItem href="/#Experience" path={path}>
+          <Button p="5">Bio</Button>
         </LinkItem>
 
         <Link href="mailto: kaj.kwok@gmail.com">
