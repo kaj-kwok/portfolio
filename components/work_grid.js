@@ -15,7 +15,7 @@ const GridBox = () => {
       </Heading>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={7} gridAutoRows="1fr">
         <Section>
-          <WorkGridItem id="Name_that_toon" title="Name that Toon" thumbnail={thumbNameThat} >
+          <WorkGridItem id="name_that_tune" title="Name that Toon" thumbnail={thumbNameThat} >
             A fun music recognition game!<br />
             Listen to a snippet of a song from your Favourite Artist and Match the name of the Song.
           </WorkGridItem>
@@ -33,7 +33,7 @@ const GridBox = () => {
           </WorkGridItem>
         </Section>
         <Section>
-          <WorkGridItem id="Jungle" title="Jungle E-Commerce" thumbnail={thumbJungle}>
+          <WorkGridItem id="jungle" title="Jungle E-Commerce" thumbnail={thumbJungle}>
             E-Commerce Platform for Plants.
             Buy and sell your favourite plants built on Ruby. Submit reviews on products, sample payment system using Stripe.
           </WorkGridItem>

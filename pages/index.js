@@ -4,7 +4,7 @@ import {
 } from "@chakra-ui/react"
 import TechStack from "../components/techstack"
 import Projects from "../components/work_grid"
-import Education from "../components/education"
+import ContactMe from "../components/contactme"
 import Hero from "../components/hero"
 import AboutMe from "../components/aboutme"
 
@@ -23,7 +23,7 @@ export default function Home() {
         <TechStack />
       </Box>
       <Box>
-        <Education />
+        <ContactMe />
       </Box>
     </Container >
   )

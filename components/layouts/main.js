@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Box, Container, MenuButton, Menu, IconButton, MenuItem, MenuList, Flex } from '@chakra-ui/react'
+import { Box, Container, MenuButton, Menu, IconButton, MenuItem, MenuList, Link } from '@chakra-ui/react'
 import SideBar from './sidebar'
 import ThemeSelector from '../darkmode'
 import { HamburgerIcon } from '@chakra-ui/icons'
@@ -13,20 +13,30 @@ const Main = ({ children, router }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Ryan Kwok's Homepage</title>
       </Head>
-      <Box pos="absolute" right="0" top="0" p={2} >
+      <Box position="fixed" right="0" top="0" p={2} >
         <ThemeSelector />
         <Box display={{ base: 'inline-block', md: 'none' }}>
           <Menu>
             <MenuButton as={IconButton} aria-label="Open Menu" icon={<HamburgerIcon />} mx={2} />
             <MenuList>
+              <Link href="/#AboutMe">
+                <MenuItem>
+                  About Me
+                </MenuItem>
+              </Link>
+              <Link href="/#Projects">
+                <MenuItem>
+                  Projects
+                </MenuItem>
+              </Link>
               <MenuItem>
                 Resume
               </MenuItem>
               <MenuItem>
-                Projects
+                Tech Stack
               </MenuItem>
               <MenuItem>
-                Tech Stack
+                Contact Me
               </MenuItem>
             </MenuList>
           </Menu>

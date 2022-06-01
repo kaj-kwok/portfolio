@@ -16,6 +16,7 @@ const AboutMe = () => {
       <Flex
         flexDirection="column"
         justifyContent="center"
+        height="100%"
       >
         <Heading as="h3" mb={7}> About Me</Heading>
         <Flex
@@ -25,7 +26,7 @@ const AboutMe = () => {
           <Box
             display="flex"
             flexDirection="column"
-            width="60%"
+            width="75%"
           >
             <Text>Hi, thanks for visiting. Born and raised in Sydney, Australia but now call Vancouver home. I have always had an interest in technology growing up starting with the dial-up modem. Working for a software company peaked my interest in web development, particularly manifesting a solution using code for a real-life problem. </Text>
             <Text mt={4}>Currently excited to jump into the world of web-development</Text>

@@ -23,7 +23,7 @@ const SideBar = ({ path }) => {
   return (
     <Flex
       display={{ base: 'none', md: 'flex' }}
-      w={[0, "md"]}
+      w={{ base: "0", md: "20%" }}
       h="95vh"
       direction="column"
       alignItems="end"
@@ -31,17 +31,20 @@ const SideBar = ({ path }) => {
 
     >
       <Flex direction="column" position="fixed" gap='10px'>
-        <LinkItem href="/#AboutMe" path={path} scroll={false}>
+        <LinkItem href="/#AboutMe" path={path} scroll="false">
           <Button p="5">About Me</Button>
         </LinkItem>
-        <LinkItem href="/#Projects" path={path} scroll={false}>
+        <LinkItem href="/#Projects" path={path} scroll="false">
           <Button p="5">Projects</Button>
+        </LinkItem>
+        <LinkItem href="https://resume.creddle.io/resume/8xbo4kbd6hl" path={path} isExternal>
+          <Button p="5">Resume</Button>
         </LinkItem>
         <LinkItem href="/#TechStack" path={path}>
           <Button p="5">Tech Stack</Button>
         </LinkItem>
-        <LinkItem href="/#Experience" path={path}>
-          <Button p="5">Bio</Button>
+        <LinkItem href="/#ContactMe" path={path}>
+          <Button p="5">Contact Me</Button>
         </LinkItem>
 
         <Link href="mailto: kaj.kwok@gmail.com">
