@@ -11,7 +11,7 @@ const Main = ({ children, router }) => {
     <Box as="main" pb={8} display="flex" >
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Ryan Kwok's Homepage</title>
+        <title>Ryan Kwok&apos;s Homepage</title>
       </Head>
       <Box position="fixed" right="0" top="0" p={2} >
         <ThemeSelector />
