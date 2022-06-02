@@ -37,13 +37,13 @@ const SideBar = ({ path }) => {
         <LinkItem href="/#Projects" path={path} scroll="false">
           <Button p="5">Projects</Button>
         </LinkItem>
-        <LinkItem href="https://resume.creddle.io/resume/8xbo4kbd6hl" path={path} isExternal>
+        <LinkItem href="https://resume.creddle.io/resume/8xbo4kbd6hl" path={path} scroll="false" isExternal>
           <Button p="5">Resume</Button>
         </LinkItem>
-        <LinkItem href="/#TechStack" path={path}>
+        <LinkItem href="/#TechStack" path={path} scroll="false">
           <Button p="5">Tech Stack</Button>
         </LinkItem>
-        <LinkItem href="/#ContactMe" path={path}>
+        <LinkItem href="/#ContactMe" path={path} scroll="false">
           <Button p="5">Contact Me</Button>
         </LinkItem>
 
