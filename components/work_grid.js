@@ -38,11 +38,6 @@ const GridBox = () => {
             Buy and sell your favourite plants built on Ruby. Submit reviews on products, sample payment system using Stripe.
           </WorkGridItem>
         </Section>
-        <Section>
-          <WorkGridItem id="tweeter" title="Tweeter" thumbnail={thumbTweeter}>
-            Simple Twitter clone using Javascript and JQuery.
-          </WorkGridItem>
-        </Section>
       </SimpleGrid>
     </Container >
 

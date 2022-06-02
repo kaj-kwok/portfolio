@@ -24,13 +24,13 @@ const Scheduler = () => {
           </ListItem>
           <ListItem>
             <ProfileImage
-              src="/scheduler/dayToggle.gif" alt="namethattune"
+              src="/scheduler/dayToggle.gif" alt="Scheduler"
             />
             <ProfileImage
-              src="/scheduler/newappointment.gif" alt="namethattune"
+              src="/scheduler/newappointment.gif" alt="Scheduler"
             />
             <ProfileImage
-              src="/scheduler/Editappointment.gif" alt="namethattune"
+              src="/scheduler/Editappointment.gif" alt="Scheduler"
             />
           </ListItem>
         </List>
