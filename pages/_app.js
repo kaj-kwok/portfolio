@@ -1,7 +1,7 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import '../styles/globals.css';
 import Layout from '../components/layouts/main'
-import theme from './styles/theme';
+import theme from '../lib/styles/theme';
 
 const MyWebsite = ({ Component, pageProps, router }) => {
   return (
