@@ -1,12 +1,7 @@
-import { Project, Title } from "../../components/layouts/project";
+import { Project, Title, ProfileImage } from "../../components/layouts/project";
 import { Container, Flex, Text, Badge, List, ListItem, IconButton } from "@chakra-ui/react";
-import Image from "next/image";
 import { BsGithub } from "react-icons/bs";
 import Link from "next/link"
-import game from "../../public/name_that_tune/game.png"
-import menu from "../../public/name_that_tune/menu.png"
-import stats from "../../public/name_that_tune/stats.png"
-
 
 const NameThatTune = (id) => {
   return (
@@ -30,14 +25,14 @@ const NameThatTune = (id) => {
             </ListItem>
           </List>
           <Flex gap={5} direction="column">
-            <Image
-              src={game}
+            <ProfileImage
+              src="/name_that_tune/menu.png" alt="namethattune"
             />
-            <Image
-              src={menu}
+            <ProfileImage
+              src="/name_that_tune/game.png" alt="namethattune"
             />
-            <Image
-              src={stats}
+            <ProfileImage
+              src="/name_that_tune/stats.png" alt="namethattune"
             />
           </Flex>
         </Flex>

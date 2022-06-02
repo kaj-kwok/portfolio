@@ -1,4 +1,4 @@
-import { Heading, Box, Link } from "@chakra-ui/react";
+import { Heading, Box, Link, Image } from "@chakra-ui/react";
 import NextLink from "next/link"
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Head from "next/head";
@@ -31,4 +31,8 @@ export const Title = ({ children }) => {
     </Box>
   )
 }
+
+export const ProfileImage = ({ src, alt }) => (
+  <Image borderRadius="lg" w="full" src={src} alt={alt} mb={4} />
+)
 
