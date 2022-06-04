@@ -7,15 +7,6 @@ const StyledDiv = chakra(motion.div, {
   }
 })
 
-const banner = {
-  animate: {
-    transition: {
-      delayChildren: 2,
-      staggerChildren: 1,
-    },
-  },
-};
-
 const letters = {
   initial: {
     opacity: 0,
@@ -24,18 +15,14 @@ const letters = {
     opacity: 1,
     transition: {
       ease: [0.6, 0.01, -0.05, 0.95],
-      duration: 2,
-      delay: i * 0.2
+      duration: 1,
+      delay: i * 0.1
     }
   })
 };
 
 const AnimateLetters = ({ title }) => (
-  <motion.div
-    variants={banner}
-    initial='initial'
-    animate='animate'
-
+  <div
   >{
       [...title].map((letter, index) => (
         <motion.span
@@ -49,7 +36,7 @@ const AnimateLetters = ({ title }) => (
       )
       )
     }
-  </motion.div>
+  </div>
 )
 
 const Hero = () => {

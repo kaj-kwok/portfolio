@@ -9,6 +9,8 @@ import Hero from "../components/hero"
 import AboutMe from "../components/aboutme"
 
 export default function Home() {
+
+
   return (
 
     <Container display="flex" flexDirection="column" maxWidth="container.lg">
