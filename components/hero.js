@@ -8,13 +8,9 @@ const StyledDiv = chakra(motion.div, {
 })
 
 const banner = {
-  initial: {
-    opacity: 1
-  },
   animate: {
-    opacity: 1,
     transition: {
-      delayChildren: 5,
+      delayChildren: 2,
       staggerChildren: 1,
     },
   },
@@ -23,32 +19,36 @@ const banner = {
 const letters = {
   initial: {
     opacity: 0,
-    y: 400
   },
-  animate: {
+  animate: i => ({
     opacity: 1,
-    y: 0,
     transition: {
       ease: [0.6, 0.01, -0.05, 0.95],
-      duration: 3,
+      duration: 2,
+      delay: i * 0.2
     }
-  }
+  })
 };
 
 const AnimateLetters = ({ title }) => (
   <motion.div
     variants={banner}
-    initial='hidden'
-    animate='show'
+    initial='initial'
+    animate='animate'
+
   >{
       [...title].map((letter, index) => (
         <motion.span
-          key={letter + index}
+          key={index}
+          custom={index}
           variants={letters}
           initial='initial'
           animate='animate'
-        >{letter}</motion.span>
-      ))}
+        >{letter}
+        </motion.span>
+      )
+      )
+    }
   </motion.div>
 )
 
@@ -64,7 +64,7 @@ const Hero = () => {
       height="95vh"
     >
       {/* <div fontSize="20px"> */}
-      <AnimateLetters title={"Hello there, my name is"} />
+      <AnimateLetters title={"Hello there, my name is"} height="400px" />
       {/* </div> */}
       <Heading as="h3" fontFamily="heading" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip="text" fontSize="6xl" pb={2}>Ryan Kwok</Heading>
       <Heading as="h3" fontFamily="heading">I like to build cool things for the Web.</Heading>
