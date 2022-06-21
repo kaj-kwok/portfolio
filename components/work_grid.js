@@ -6,6 +6,7 @@ import thumbScheduler from "../public/thumbSch.png"
 import thumbStory from "../public/thumbStory.png"
 import thumbJungle from "../public/thumbJungle.png"
 import { useInView } from 'react-intersection-observer';
+import thumbSnapshot from '../public/snapshot/Screenshot 2022-06-20 180714.png'
 
 const GridBox = () => {
   const { ref, inView, entry } = useInView({
@@ -18,6 +19,12 @@ const GridBox = () => {
         Projects
       </Heading>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={7} gridAutoRows="1fr">
+        <Section forwardedref={inView}>
+          <WorkGridItem id="snapshot" title="Snapshot" thumbnail={thumbSnapshot}>
+            Photo sharing platform<br />
+            Upload photos, tag them and share with friends.
+          </WorkGridItem>
+        </Section>
         <Section forwardedref={inView}>
           <WorkGridItem id="name_that_tune" title="Name that Toon" thumbnail={thumbNameThat} >
             A fun music recognition game!<br />
